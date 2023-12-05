@@ -1,0 +1,39 @@
+.login-panel {
+	flex-direction: column;
+
+	.title {
+		margin-bottom: 1.5625rem;
+	}
+
+	.login-tabs {
+		width: 31.25rem;
+		border-radius: 1rem;
+		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.08);
+		overflow: hidden;
+
+		& > .el-tabs__content {
+			padding: 2rem;
+			color: #6b778c;
+			font-size: 2rem;
+			font-weight: 600;
+		}
+	}
+
+	.control {
+		justify-content: space-between;
+		width: 100%;
+		padding: 0 0.9375rem;
+		box-sizing: border-box;
+	}
+
+	.login-btn {
+		width: 100%;
+		padding: 0 0.3125rem;
+		box-sizing: border-box;
+
+		.el-button {
+			width: 100%;
+			padding: 1.25rem 0;
+		}
+	}
+}

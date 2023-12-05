@@ -35,6 +35,32 @@ li {
     list-style: none;
 }
 
+html {
+	font-size: 16px;
+}
+
+/* 小屏幕 */
+@media (max-width: 767px) {
+	html {
+		font-size: 12px;
+	}
+}
+
+/* 中等屏幕 */
+@media (min-width: 768px) and (max-width: 1023px) {
+	html {
+		font-size: 14px;
+	}
+}
+
+/* 大屏幕 */
+@media (min-width: 1024px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+
 /* 解决 h1 标签在 webkit 内核浏览器中文字大小失效问题 */
 :-webkit-any(article, aside, nav, section) h1 {
     font-size: 2em;

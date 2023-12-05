@@ -1,22 +1,17 @@
 <template>
-    <div class="login">This is Login Page</div>
+    <div class="login flex-center">
+        <login-panel />
+    </div>
 </template>
 
 <script setup lang="ts">
-import MyRequest from '@/API/index';
-
-console.log(import.meta.env);
-
-MyRequest({
-    method: 'GET',
-    url: '/home/multidata'
-}).then(res => {
-    console.log(res);
-});
+import LoginPanel from './components/LoginPanel/index.vue';
 </script>
 
 <style scoped lang="scss">
-.logo {
-    margin: 250px auto;
+.login {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('@/assets/image/login-bg.svg');
 }
 </style>

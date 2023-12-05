@@ -1,8 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { adaptation } from '@/utils';
+import { onMounted } from 'vue';
+
+onMounted(() => {
+    window.addEventListener('resize', adaptation, false);
+});
+</script>
 
 <template>
-    <header>App</header>
-
     <RouterView />
 </template>
 
